@@ -4,9 +4,15 @@
   <head>
     <title>Hello from FinalTask</title>
   </head>
-  <body>
-  <h1>привет without restart</h1>
-  <a href="main">go to main</a>
-  <%=request.getParameter("login")%>
-  </body>
+    <body>
+
+        <form action="controller" method="post">
+          <input type="hidden" name="command" value="authorization"/>
+          <input type="text" name="login" value=""/>
+            <input type="password" name="pass" value=""/>
+          <input type="submit" value="Sing in"/>
+        </br>
+
+        </form>
+    </body>
 </html>
